@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70FC5A"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+<RelativeLayout        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="167dp"
+            android:layout_height="156dp"
+            app:srcCompat="@drawable/prawn"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ready to start playing? Just key in the last 4 digits of your receipt number!"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="51dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@+id/editText7"
+                android:layout_toRightOf="@+id/editText7"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="textStart"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="51dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_toEndOf="@+id/editText5"
+                android:layout_toRightOf="@+id/editText5"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="textStart"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="51dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="textStart"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="51dp"
+                android:layout_height="56dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/editText8"
+                android:layout_toRightOf="@+id/editText8"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="textStart"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="66dp"
+                android:text="Im Ready!"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_below="@+id/editText8"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
